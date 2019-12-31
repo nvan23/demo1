@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./scss/main.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spa</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="back-to-top">
+            <i onclick="topFunction()" id="back-to-top-Btn" title="Go to top" class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="topnav" id="topNavBar">
+            <a href="#" 
+                data-aos="fade-down"
+                data-aos-duration="1000"
+            >HOME</a>
+            <a href="#about-us-row"
+                data-aos="fade-down"
+                data-aos-duration="1200"
+            >ABOUT</a>
+            <a href="#price"
+                data-aos="fade-down"
+                data-aos-duration="1400"
+            >PRICE</a>
+            <a href="#show-service"
+                data-aos="fade-down"
+                data-aos-duration="1600"
+            >TESTIMONITALS</a>
+            <a href="#contact"
+                data-aos="fade-down"
+                data-aos-duration="1800"
+            >CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-chevron-circle-down"></i>
+            </a>
+        </div>
+        <img src="./images/banner3.png" alt="">
+    </header>
+
+    <div class="content">
+        <div class="about-us-row" id="about-us-row">
+            <div class="column" data-aos="fade-right">
+                <div class="title">
+                    <p>About Us</p>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet,consectetur adipisicing elit Distinctio, libero voluptas iusto quo mum quam possimus
+                        provident, deserunt est minima quisquam amet magnam animi?Enim adipisci facilisvoluptasodit! Facilis rerum ipsam
+                        modi
+                        perspiciatis exercitationem explicabo,tempore soluta culpa cupid itate!
+                    </p>
+                </div>
+            </div>
+            <div class="column" data-aos="fade-left">
+                <img src="./images/flower.png">
+            </div>
+        </div>
+        <div class="services" id="services">
+            <div class="column" 
+                data-aos="fade-up"
+                data-aos-duration="500">
+                <img src="./images/towel.png">
+                <div class="info-service" >
+                    <h3>SHOWER SERVICES</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div>
+            </div>
+            <div class="column"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                <img src="./images/sandals-for-spa.png">
+                <div class="info-service">
+                    <h3>FOOT TREATMENTS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div>
+            </div>
+            <div class="column"
+                data-aos="fade-up"
+                data-aos-duration="1500">
+                <img src="./images/cup-and-plate.png">
+                <div class="info-service">
+                    <h3>INTERNAL BEAUTIFICATION</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div> 
+            </div>
+            <div class="column" 
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                <img src="./images/yoga.png">
+                <div class="info-service">
+                    <h3>YOGA & MEDITATION</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div>
+            </div>
+            <div class="column"
+                data-aos="fade-up"
+                data-aos-duration="2500">
+                <img src="./images/comb.png">
+                <div class="info-service">
+                    <h3>HAIR DRESSING</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div>
+            </div>
+            <div class="column"
+                data-aos="fade-up"
+                data-aos-duration="3000">
+                <img src="./images/foot.png">
+                <div class="info-service">
+                    <h3>HERBAL PEDICURE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="show-service" id="show-service">
+            <div class="column-left" 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <img src="./images/banner2-2.png">
+            </div>
+            <div class="column-right" 
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">
+
+                <div class="row-top">
+                    <div class="title"
+                        data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <p>Beautiful Service.</p>
+                    </div>
+                    <div class="content" 
+                        data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.Voluptas omnis nam molestias
+                            minusipsa, placeat! omnis nam molestias
+                        </p>
+                    </div>
+                </div>
+                <div class="row-bot">
+                    <div class="column" data-aos="fade-left" data-aos-delay="500">
+                        <div class="icon-item">
+                            <img src="./images/leaf.png" alt="Leaf Icon">
+                        </div>
+                        <div class="numberic-item">
+                            <p>21</p>
+                        </div>
+                        <div class="name-item" >
+                            <p>SPA BRANCHES</p>
+                        </div>
+                    </div>
+                    <div class="column" data-aos="fade-left" data-aos-delay="1000">
+                        <div class="icon-item">
+                            <img src="./images/head.png" alt="Leaf Icon">
+                        </div>
+                        <div class="numberic-item">
+                            <p>8514</p>
+                        </div>
+                        <div class="name-item">
+                            <p>EMPLOYEES</p>
+                        </div>
+                    </div>
+                    <div class="column" data-aos="fade-left" data-aos-delay="1500">
+                        <div class="icon-item">
+                            <img src="./images/yoga2.png" alt="Leaf Icon">
+                        </div>
+                        <div class="numberic-item">
+                            <p>458</p>
+                        </div>
+                        <div class="name-item">
+                            <p>HAPPY CLIENTS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+            <div class="column">
+                <div class="title" data-aos="fade-left" data-aos-delay="500">
+                    <img src="./images/img5.png" alt="circle images 1">
+                    <p>BEAUTY.</p>
+                </div>
+                <div class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <p>
+                        Your Property in Good Hands.
+                    </p>
+                </div>
+                <div class="content" 
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat! minusipsa, placeat! minusipsa, placeat!
+                    </p>
+                </div>
+                <div class="button"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="500">
+                    <button class="button">
+                        <span>READ MORE</span>
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title" data-aos="fade-left" data-aos-delay="700">
+                    <img src="./images/img6.png" alt="circle images 2">
+                    <p>SPA.</p>
+                </div>
+                <div class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <p>
+                        Your Property in Good Hands.
+                    </p>
+                </div>
+                <div class="content"
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat! minusipsa, placeat! minusipsa, placeat!
+                    </p>
+                </div>
+                <div class="button"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="500">
+                    <button class="button">
+                        <span>READ MORE</span>
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title" data-aos="fade-left" data-aos-delay="900">
+                    <img src="./images/img7.png" alt="circle images 3">
+                    <p>RELAX.</p>
+                </div>
+                <div class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <p>
+                        Your Property in Good Hands.
+                    </p>
+                </div>
+                <div class="content"
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.Voluptas omnis nam molestias
+                        minusipsa, placeat! minusipsa, placeat! minusipsa, placeat!
+                    </p>
+                </div>
+                <div class="button"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="500">
+                    <button class="button">
+                        <span>READ MORE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="discount" data-aos="fade-down">
+            <p data-aos="fade-up">
+                Book your visit online and save upto 25% Discount
+            </p>
+        </div>
+        <div class="price" id="price">
+            <div class="title">
+                <p>Our Price</p>
+            </div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.Voluptas omnis nam molestias
+                    minusipsa, placeat! minusipsa, placeat! placeat!
+                </p>
+            </div>
+            <div class="flower-icon">
+                <img src="./images/icon-flower.png" alt="Icon Flower">
+            </div>
+        </div>
+        <div class="service-price">
+            <div class="tab">
+                <button 
+                    class="tablinks" 
+                    onclick="openService(event, 'spa-therapy')" 
+                    id="defaultOpen" 
+                    data-aos="zoom-in-up"
+                    data-aos-delay="300"
+                >
+                    Spa Therapy
+                </button>
+                <button 
+                    class="tablinks" 
+                    onclick="openService(event, 'beauty-facial')" 
+                    data-aos="zoom-in-up"
+                    data-aos-delay="400"
+                >
+                    Beauty Facial
+                </button>
+                <button 
+                    class="tablinks" 
+                    onclick="openService(event, 'body-wrap')" 
+                    data-aos="zoom-in-up"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="500"
+                >
+                    Body Wrap
+                </button>
+                <button 
+                    class="tablinks" 
+                    onclick="openService(event, 'body-scrubs')" 
+                    data-aos="zoom-in-up"
+                    data-aos="zoom-in-up"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="600"
+                >
+                    Body Scrubs
+                </button>
+            </div>
+            <div id="spa-therapy" class="tabcontent">
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" 
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <li>
+                                    <span>Swedish Massage</span>
+                                    <span>39</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" 
+                            data-aos="fade-up"
+                            data-aos-duration="1400"
+                        >
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <li>
+                                    <span>Full Body Massage</span>
+                                    <span>42</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content"
+                            data-aos="fade-up"
+                            data-aos-duration="1400"
+                        >
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader"
+                                data-aos="fade-up"
+                                data-aos-duration="1800"
+                            >
+                                <li>
+                                    <span>Foo Massage</span>
+                                    <span>29</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader"
+                                data-aos="fade-up"
+                                data-aos-duration="1800"
+                            >
+                                <li>
+                                    <span>Choclate Massage</span>
+                                    <span>17</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="beauty-facial" class="tabcontent">
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Swedish Massage 1</span>
+                                    <span>39</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Full Body Massage 1</span>
+                                    <span>42</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Foo Massage 1</span>
+                                    <span>29</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Choclate Massage 1</span>
+                                    <span>17</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="body-wrap" class="tabcontent">
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Swedish Massage 2</span>
+                                    <span>39</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Full Body Massage 2</span>
+                                    <span>42</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Foo Massage 2</span>
+                                    <span>29</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Choclate Massage 2</span>
+                                    <span>17</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="body-scrubs" class="tabcontent">
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Swedish Massage 3</span>
+                                    <span>39</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1000">
+                                <li>
+                                    <span>Full Body Massage 3</span>
+                                    <span>42</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="1400">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row">
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Foo Massage 3</span>
+                                    <span>29</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="title">
+                            <ul class="priceLeader" data-aos="fade-up" data-aos-duration="1800">
+                                <li>
+                                    <span>Choclate Massage 3</span>
+                                    <span>17</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-price">
+            <img src="./images/banner4.png" alt="Image price">
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="slides">
+                <div class="slide-cover">
+                    <img src="./images/banner-5.png">
+                </div>
+                <div class="quote-block">
+                    <div class="mySlides">
+                        <div class="title" data-aos="fade-down" data-aos-delay="700">
+                            <p>Testimonials 1</p>
+                        </div>
+                        <div class="content" data-aos="zoom-in" data-aos-delay="500">
+                            <p>
+                                "1 I love you the more in that I believe you had liked me for my own sake and for nothing else."
+                            </p>
+                        </div>
+                        <div class="author" data-aos="fade-up" data-aos-delay="700">
+                            <span>Mary Jane 1, Chicago News</span>
+                        </div>
+                        <div class="rate" data-aos="fade-up" data-aos-delay="800">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="title" data-aos="fade-down" data-aos-delay="700">
+                            <p>Testimonials 2</p>
+                        </div>
+                        <div class="content" data-aos="zoom-in" data-aos-delay="500">
+                            <p>
+                                "2 I love you the more in that I believe you had liked me for my own sake and for nothing else."
+                            </p>
+                        </div>
+                        <div class="author" data-aos="fade-up" data-aos-delay="700">
+                            <span>Mary Jane 2, Chicago News</span>
+                        </div>
+                        <div class="rate" data-aos="fade-up" data-aos-delay="800">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="title" data-aos="fade-down" data-aos-delay="700">
+                            <p>Testimonials 3</p>
+                        </div>
+                        <div class="content" data-aos="zoom-in" data-aos-delay="500">
+                            <p>
+                                "3 I love you the more in that I believe you had liked me for my own sake and for nothing else."
+                            </p>
+                        </div>
+                        <div class="author" data-aos="fade-up" data-aos-delay="700">
+                            <span>Mary Jane 3, Chicago News</span>
+                        </div>
+                        <div class="rate" data-aos="fade-up" data-aos-delay="800">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+        
+                    <div class="dot-container" data-aos="fade-up" data-aos-delay="800">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve-now-form" id="contact">
+            <div class="input-field-form">
+                <div class="title">
+                    <p>Reserve Now</p>
+                </div>
+                <form>
+                    <div class="input-name">
+                        <label for="name">NAME *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-phone">
+                        <label for="phone">PHONE *</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="input-email">
+                        <label for="email">EMAIL *</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <label for="message">MESSSAGE *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="button">
+                        <button class="button">
+                            <span>SEND MESSAGE</span>
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="image-form">
+                <img src="./images/img-8.png" alt="Massage Images">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="address">
+                <div class="title">
+                    <p>
+                        Headquarters:
+                    </p>
+                </div>
+                <div class="address-content">
+                    <p>
+                        795 Folsom Ave, Suite 600
+                        <br>
+                        San Francisco, CA 94107
+                    </p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="title">
+                    <p>
+                        Contact:
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <ul>
+                        <li>
+                            <span class="title">Phone: </span>
+                            <span class="content">(91) 8547 632521</span>
+                        </li>
+                        <li>
+                            <span class="title">Fax:</span>
+                            <span class="content">(91) 11 47521433</span>
+                        </li>
+                        <li>
+                            <span class="title">Email:</span>
+                            <span class="content">info@canvas.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-network">
+                <div class="social-icon-row">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                </div>
+                <div class="copyright">
+                    <p>2014 All Rights Reserved by Canvas Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

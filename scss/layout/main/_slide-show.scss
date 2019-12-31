@@ -1,0 +1,266 @@
+
+.slideshow-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.slideshow-container {
+    position: relative;
+    .slides {
+        .slide-cover {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .quote-block {
+            text-align: left;
+            background-color: none;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            width: 30%;
+            @include mobile {
+                left: 5%;
+                width: 50%;
+            }
+            @include note {
+                left: 10%;
+                width: 50%;
+            }
+            @include tablet {
+                left: 10%;
+                width: 50%;
+            }
+            @include laptop {
+                left: 15%;
+                width: 40%;
+            }
+            @include desktop {
+                left: 20%;
+                width: 40%;
+            }
+            .mySlides {
+                padding-top: 5%;
+                .title {
+                    padding-top: 20%;
+                    padding-bottom: 10%;
+                    @include mobile {
+                        padding-top: 0;
+                        padding-bottom: 4px;
+                    }
+                    @include note {
+                        padding-top: 0;
+                        padding-bottom: 15px;
+                    }
+                    @include tablet {
+                        padding-top: 10px;
+                        padding-bottom: 25px;
+                    }
+                    @include laptop {
+                        padding-top: 15%;
+                        padding-bottom: 25px;
+                    }
+                    @include desktop {
+                        padding-top: 10%;
+                        padding-bottom: 35px;
+                    }
+                    @include desktopLarge {
+                        padding-top: 20%;
+                        padding-bottom: 35px;
+                    }
+                    p {
+                        font-size: 140%;
+                        @include mobile {
+                            font-size: 100%;
+                        }
+                        @include laptop {
+                            font-size: 150%;
+                        }
+                        @include desktop {
+                            font-size: 25px;
+                        }
+                        @include desktopLarge {
+                            font-size: 35px;
+                        }
+                        font-family: 'Oleo Script Swash Caps';
+                    }
+                }
+                .content {
+                    font-size: 80%;
+                    @include mobile {
+                        font-size: 70%;
+                        line-height: 13px;
+                        padding-bottom: 5%;
+                    }
+                    @include note {
+                        font-size: 85%;
+                        line-height: 20px;
+                        padding-bottom: 5%;
+                        padding-right: 15%;
+                    }
+                    @include tablet {
+                        font-size: 100%;
+                        line-height: 20px;
+                        padding-bottom: 5%;
+                        padding-right: 15%;
+                    }
+                    @include laptop {
+                        font-size: 100%;
+                        line-height: 20px;
+                        padding-bottom: 5%;
+                        padding-right: 15%;
+                    }
+                    @include desktop {
+                        font-size: 15px;
+                        line-height: 28px;
+                        padding-bottom: 5%;
+                        padding-right: 15%;
+                    }
+                    @include desktopLarge {
+                        font-size: 20px;
+                        line-height: 28px;
+                        padding-bottom: 5%;
+                        padding-right: 15%;
+                    }
+                    float: left;
+                    line-height: 25px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .author {
+                    padding-top: 15%;
+                    @include mobile {
+                        padding-top: 5%;
+                        font-size: 60%; 
+                    }
+                    @include note {
+                        padding-top: 5%;
+                        font-size: 70%; 
+                    }
+                    @include tablet {
+                        padding-top: 5%;
+                        font-size: 80%; 
+                    }
+                    @include laptop {
+                        padding-top: 5%;
+                        font-size: 80%; 
+                    }
+                    @include desktop {
+                        padding-top: 5%;
+                        font-size: 12px; 
+                    }
+                    @include desktopLarge {
+                        padding-top: 5%;
+                        font-size: 15px; 
+                    }
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 65%;
+                }
+                .rate {
+                    float: left;
+                }
+                .rate:not(:checked) > input {
+                    position:absolute;
+                    top:-9999px;
+                }
+                .rate:not(:checked) > label {
+                    float:right;
+                    width: 1em;
+                    overflow:hidden;
+                    white-space:nowrap;
+                    cursor:pointer;
+                    font-size: 12px;
+                    @include mobile {
+                        font-size: 50%;
+                    }
+                    @include desktop {
+                        font-size: 15px;
+                    }
+                    color:#ccc;
+                }
+                .rate:not(:checked) > label:before {
+                    content: '☆ ';
+                }
+                .rate > input:checked ~ label {
+                    color: white; 
+                }
+                .rate:not(:checked) > label:hover,
+                .rate:not(:checked) > label:hover ~ label {
+                    color: white;
+                }
+                .rate > input:checked + label:hover,
+                .rate > input:checked + label:hover ~ label,
+                .rate > input:checked ~ label:hover,
+                .rate > input:checked ~ label:hover ~ label,
+                .rate > label:hover ~ input:checked ~ label {
+                    color: white;
+                }
+            }
+            .dot-container {
+                float: right;
+                position: absolute;
+                top: 90%;
+                right: 3%;
+                @include mobile {
+                    top: 80%;
+                    right: 3%;
+                }
+                @include note {
+                    top: 85%;
+                    right: 18%;
+                }
+                @include tablet {
+                    top: 85%;
+                    right: 20%;
+                }
+                @include laptop {
+                    top: 90%;
+                    right: 20%;
+                }
+                @include desktop {
+                    top: 92%;
+                    right: 16%;
+                }
+                .dot {
+                    @include mobile {
+                        border: 0.5px solid;
+                        height: 4px;
+                        width: 4px;
+                        margin: 0;
+                        opacity: 10;
+                        border-radius: 50%;
+                    }
+                    cursor: pointer;
+                    height: 6px;
+                    width: 6px;
+                    margin: 0 2px;
+                    opacity: 10;
+                    border-radius: 50%;
+                    border: 1px solid;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                .active, .dot:hover {
+                    background-color: white;
+                }
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 3s;
+                    animation-name: fade;
+                    animation-duration: 3s;
+                }
+                
+                @-webkit-keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                }
+                
+                @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                }
+            }
+        }
+    }
+}

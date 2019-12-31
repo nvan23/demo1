@@ -1,0 +1,318 @@
+@import "../../helper/mixin.scss";
+@import "../../helper/variable.scss";
+@import "../../helper/font.scss";
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: #f5f5f5;
+    padding: 30px 20%;
+    @include mobile {
+        padding: 10px 10%;
+        padding-bottom: 20px;
+    }
+    @include note {
+        padding: 25px 10%;
+        padding-bottom: 20px;
+    }
+    @include tablet {
+        padding: 25px 10%;
+        padding-bottom: 20px;
+    }
+    @include laptop {
+        padding: 25px 10%;
+        padding-bottom: 20px;
+    }
+    @include desktop {
+        padding: 3% 15%;
+    }
+    @include desktopLarge {
+        padding: 3% 20%;
+    }
+    .address {
+        float: left;
+        width:25%;
+        @include mobile {
+            width: 50%;
+        }
+        @include note {
+            width: 50%;
+        }
+        .title {
+            padding-bottom: 20px;
+            @include mobile {
+               padding-bottom: 4px; 
+            }
+            p {
+                @include mobile {
+                    font-size: 90%;
+                }
+                @include note {
+                    font-size: 90%;
+                }
+                @include laptop {
+                    font-size: 90%;
+                }
+                @include desktop {
+                    font-size: 18px;
+                }
+                @include desktopLarge {
+                    font-size: 20px;
+                }
+                font-size: x-small;
+                font-weight: bolder;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+        .address-content {
+            p {
+                @include mobile {
+                    font-size: 70%;
+                    line-height: 110%;
+                }
+                @include note {
+                    font-size: 80%;
+                    line-height: 110%;
+                }
+                @include laptop {
+                    font-size: 80%;
+                    line-height: 110%;
+                }
+                @include desktop {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                @include desktopLarge {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                font-size: x-small;
+                color: gray;
+            }
+        }
+    }
+    .contact {
+        float: left;
+        width:25%;
+        @include mobile {
+            width: 50%;
+        }
+        @include note {
+            width: 50%;
+        }
+        .title {
+            padding-bottom: 15px;
+            @include mobile {
+                padding-bottom: 2px;
+            }
+            @include note {
+                padding-bottom: 16px;
+            }
+            @include laptop {
+                padding-bottom: 16px;
+            }
+            @include desktop {
+                padding-bottom: 18px;
+            }
+            @include desktopLarge {
+                padding-bottom: 18px;
+            }
+            p {
+                @include mobile {
+                    font-size: 90%;
+                }
+                @include note {
+                    font-size: 90%;
+                }
+                @include laptop {
+                    font-size: 90%;
+                }
+                @include desktop {
+                    font-size: 18px;
+                }
+                @include desktopLarge {
+                    font-size: 20px;
+                }
+                font-weight: bolder;
+                font-size: x-small;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+        .contact-content {
+            @include mobile {
+                line-height: 80%;
+            }
+            .title {
+                @include mobile {
+                    font-size: 70%;
+                }
+                @include laptop {
+                    font-size: 80%;
+                }
+                @include desktop {
+                    font-size: 13px;
+                }
+                @include desktopLarge {
+                    font-size: 16px;
+                }
+                font-size: x-small;
+                color: gray;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .content {
+                @include mobile {
+                    font-size: 70%;
+                }
+                @include laptop {
+                    font-size: 80%;
+                }
+                @include desktop {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                @include desktopLarge {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                font-size: x-small;
+                color: gray;
+            }
+        }
+    }
+    .social-network {
+        float: left;
+        width:50%;
+        padding-top: 20px;
+        @include mobile {
+            padding-top: 0;
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        @include note {
+            padding-top: 30px;
+            float: left;
+            width: 100%;
+        }
+        .social-icon-row{
+            text-align: right;
+            @include mobile {
+                margin-top: 20%;
+                text-align: center;
+            }
+            @include note {
+                text-align: center;
+            }
+            .fa {
+                @include mobile {
+                    padding: 2px 0px;
+                    padding-top: 6px;
+                    font-size: 150%;
+                    width: 10%;
+                    text-align: center;
+                    border-radius: 3px; 
+                }
+                @include desktop {
+                    padding: 10px 2px;
+                    font-size: 20px;
+                    width: 40px;
+                    text-align: center;
+                    border-radius: 3px; 
+                }
+                @include desktopLarge {
+                    padding: 10px 2px;
+                    font-size: 20px;
+                    width: 40px;
+                    text-align: center;
+                    border-radius: 3px; 
+                }
+                padding: 6px 0;
+                font-size: 14px;
+                width: 25px;
+                text-align: center;
+                border-radius: 2px;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+            }
+
+            .fa-google {
+                background: #dd4b39;
+                color: white;
+            }
+
+            .fa-linkedin {
+                background: #007bb5;
+                color: white;
+            }
+
+            .fa-youtube {
+                background: #bb0000;
+                color: white;
+            }
+
+            .fa-instagram {
+                background: #125688;
+                color: white;
+            }
+
+            .fa-pinterest {
+                background: #cb2027;
+                color: white;
+            }
+
+            .fa-snapchat-ghost {
+                background: #fffc00;
+                color: white;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+        }
+        .copyright {
+            padding-top: 5px;
+            @include mobile {
+                padding-top: 10px;
+            }
+            @include note {
+                padding-top: 10px;
+            }
+            p {
+                @include mobile {
+                   font-size: 70%; 
+                   text-align: center;
+                }
+                @include note {
+                   font-size: 70%; 
+                   text-align: center;
+                }
+                @include laptop {
+                   font-size: 80%; 
+                }
+                @include desktop {
+                   font-size: 14px; 
+                }
+                @include desktopLarge {
+                   font-size: 15px; 
+                }
+                text-align: right;
+                font-size: x-small;
+                color: gray;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}

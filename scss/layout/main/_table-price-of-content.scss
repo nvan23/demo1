@@ -1,0 +1,253 @@
+.service-price {
+    background-color: white;
+    /* Style the tab */
+    .tab {
+        padding-bottom: 25px;
+        @include mobile {
+            padding-bottom: 5px;
+        }
+        text-align: center;
+        .tablinks {
+            margin: 10px;
+            @include mobile {
+                margin: 2px;
+            }
+        }
+
+        /* Style the buttons inside the tab */
+        button {
+            @include mobile {
+                border-radius: 2px;
+                padding: 1% 2%;
+                font-size: 150%;
+            };
+            @include note {
+                border-radius: 2px;
+                padding: 1% 2%;
+                font-size: 100%;
+            };
+            @include tablet {
+                border-radius: 2px;
+                padding: 1% 2%;
+                font-size: 100%;
+            };
+            @include laptop {
+                border-radius: 2px;
+                padding: 0.5% 2%;
+                font-size: 100%;
+            };
+            @include desktop {
+                border-radius: 2px;
+                padding: 0.5% 2%;
+                font-size: 15px;
+            };
+            @include desktopLarge {
+                border-radius: 2px;
+                padding: 0.5% 2%;
+                font-size: 18px;
+            };
+            background-color: none;
+            border: 1px solid #dfdfdf;
+            outline: none;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 6px 8px;
+            transition: 0.3s;
+            font-size: x-small;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color:  #79c9d2;
+        border: none;
+        color: white;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #79c9d2;
+        color: white;
+        border: none;
+    }
+
+    /* Style the tab content */
+    .tabcontent:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .tabcontent {
+        padding: 0 25%;
+        @include mobile {
+            padding: 0 5%;
+        }
+        @include note {
+            padding: 0 2%;
+        }
+        @include tablet {
+            padding: 0 5%;
+        }
+        @include laptop {
+            padding: 0 5%;
+        }
+        @include desktop {
+            padding: 0 15%;
+        }
+        @include desktopLarge {
+            padding: 0 18%;
+        }
+        text-align: center;
+        
+        .column {
+            text-align: center;
+            float: left;
+            width: 50%;
+            padding: 3% 5%;
+            @include mobile {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            .span {
+                font-weight: bold;
+                font-style: italic;
+            }
+            .title {
+                padding-bottom: 10px;
+                @include mobile {
+                    padding-bottom: 5px;
+                }
+                ul.priceLeader {
+                    max-width: 40em;
+                    padding: 0;
+                    overflow: hidden;
+                    list-style: none}
+                ul.priceLeader li:before {
+                    float: left;
+                    width: 0;
+                    white-space: nowrap;
+                    color: #79c9d2;
+                    content:
+                ". . . . . . . . . . . . . . . . . . . . "
+                ". . . . . . . . . . . . . . . . . . . . "
+                ". . . . . . . . . . . . . . . . . . . . "
+                ". . . . . . . . . . . . . . . . . . . . "}
+                ul.priceLeader span:first-child {
+                    float: left;
+                    padding-right: 8px;
+                    background: white;
+                    @include mobile {
+                        font-size: 100%;
+                        padding-right: 4px;
+                    }
+                    @include note {
+                        font-size: 100%;
+                        padding-right: 4px;
+                    }
+                    @include tablet {
+                        font-size: 100%;
+                        padding-right: 4px;
+                    }
+                    @include laptop {
+                        font-size: 110%;
+                        padding-right: 4px;
+                    }
+                    @include desktop {
+                        font-size: 20px;
+                        padding-right: 4px;
+                    }
+                    @include desktopLarge {
+                        font-size: 25px;
+                        padding-right: 8px;
+                    }
+                }
+                ul.priceLeader span + span {
+                    float: right;
+                    padding-left: 0.33em;
+                    color: #79c9d2;
+                    padding-right: 4px;
+                    background: white}
+                    @include mobile {
+                        font-size: 100%;
+                    }
+                    @include note {
+                        font-size: 110%;
+                    }
+                    @include tablet {
+                        font-size: 120%;
+                    }
+                    @include laptop {
+                        font-size: 130%;
+                    }
+                    @include desktop {
+                        font-size: 20px;
+                    }
+                    @include desktopLarge{
+                        font-size: 25px;
+                    }
+                ul.priceLeader span + span:before {
+                    content: '$';
+                    padding-right: 0.15em;
+                    padding-left: 0.30em;
+                }                
+                font-family: 'Oleo Script Swash Caps';
+                
+            }
+            .content {
+                p {
+                    line-height: 18px;
+                    text-align: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: x-small;
+                    color: gray;
+                    @include mobile {
+                        font-size: 90%;
+                        line-height: 20px;
+                    }
+                    @include note {
+                        font-size: 90%;
+                        line-height: 20px;
+                    }
+                    @include tablet {
+                        font-size: 100%;
+                        line-height: 20px;
+                    }
+                    @include laptop {
+                        font-size: 100%;
+                        line-height: 20px;
+                    }
+                    @include desktop {
+                        font-size: 15px;
+                        line-height: 28px;
+                    }
+                    @include desktopLarge {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    }
+
+    /* Go from zero to full opacity */
+    @keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.image-price {
+    img {
+        width: 100%;
+    }
+}

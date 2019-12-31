@@ -1,0 +1,240 @@
+//slogan row
+.slogan:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slogan {
+    padding: 0 20%;
+    @include mobile {
+        padding: 0 10%;
+    }
+    @include note {
+        padding: 10% 5%;
+    }
+    @include tablet {
+        padding: 0 5%;
+    }
+    @include laptop {
+        padding: 3% 10%;
+    }
+    @include desktop {
+        padding: 3% 15%;
+    }
+    background-color: white;
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+        @include mobile {
+            padding: 0 5px;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            padding-bottom: 10%;
+            @include mobile {
+                width: 70%;
+                padding-bottom: 4%;
+            }
+            @include laptop {
+                width: 70%;
+                padding-bottom: 6%;
+            }
+            @include desktop {
+                width: 80%;
+                padding-bottom: 6%;
+            }
+            @include desktopLarge {
+                width: 80%;
+                padding-bottom: 6%;
+            }
+        }
+        .title {
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            padding-bottom: 5%;
+            @include mobile {
+                margin-top: 10%;
+                font-size: 150%;
+                padding-bottom: 4%;
+            }
+            @include note {
+                margin-top: 10%;
+                font-size: 100%;
+                padding-bottom: 4%;
+            }
+            @include tablet {
+                margin-top: 10%;
+                font-size: 120%;
+                padding-bottom: 4%;
+            }
+            @include laptop {
+                margin-top: 5%;
+                font-size: 100%;
+                padding: 5% 0;
+            }
+            @include desktop {
+                :first-child {
+                    margin-top: 10px;
+                }
+                margin-top: 5%;
+                font-size: 20px;
+                padding: 5% 0;
+            }
+            @include desktopLarge {
+                margin-top: 5%;
+                font-size: 20px;
+                padding: 5% 0;
+            }
+        }
+        .subtitle {
+            text-align: center;
+            padding-bottom: 8%;
+            color: #79c9d2;
+            font-family: 'Oleo Script Swash Caps';
+            font-size: small;
+            @include mobile {
+                font-size: 120%;
+                padding-bottom: 3%;
+            }
+            @include note {
+                font-size: 100%;
+                padding-bottom: 3%;
+            }
+            @include tablet {
+                font-size: 120%;
+                padding-bottom: 3%;
+            }
+            @include laptop {
+                font-size: 120%;
+                padding-bottom: 5%;
+            }
+            @include desktop {
+                font-size: 20px;
+                padding-bottom: 5%;
+            }
+            @include desktopLarge {
+                font-size: 22px;
+                padding-bottom: 5%;
+            }
+        }
+        .content {
+            p {
+                text-align: center;
+                font-size: x-small;
+                @include mobile {
+                    font-size: 100%;
+                    line-height: 18px;
+                }
+                @include note {
+                    font-size: 80%;
+                    line-height: 16px;
+                    text-align: center;
+                }
+                @include tablet {
+                    font-size: 90%;
+                    line-height: 18px;
+                    text-align: center;
+                }
+                @include laptop {
+                    font-size: 90%;
+                    line-height: 20px;
+                    text-align: center;
+                }
+                @include desktop {
+                    padding: 0 5px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                @include desktopLarge {
+                    padding: 0 5px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                color: gray;
+                line-height: 15px;
+            }
+            padding-bottom: 5%;
+            @include mobile {
+                padding-bottom: 4%;
+            }
+        }
+        .button {
+            text-align: center;
+            span {
+                font-size: x-small;
+                @include mobile {
+                    font-size: 16px;
+                }
+                @include desktop {
+                    font-size: 10px;
+                }
+                @include desktopLarge {
+                    font-size: 14px;
+                }
+                font-weight: bold;
+                text-align: center;
+            }
+            .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+
+                .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+                .button:hover span {
+                    padding-right: 25px;
+                    @include mobile {
+                        padding-right: 15px;
+                    }
+                }
+
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+            button {
+                vertical-align: middle;
+                border-style: none;
+                border-radius: 2px;
+                color: white;
+                background-color: #79c9d2;
+                font-size: 18px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 6px;
+                @include mobile {
+                    border-radius: 1px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 1px;
+                }
+                @include desktop {
+                    border-radius: 2px;
+                    padding: 1px 10px;
+                    padding-bottom: 5px;
+                }
+                @include desktopLarge {
+                    border-radius: 2px;
+                    padding: 5px 10px;
+                    padding-bottom: 5px;
+                }
+            }            
+        }
+        
+    }
+}

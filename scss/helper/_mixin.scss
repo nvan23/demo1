@@ -1,0 +1,71 @@
+@import 'variable.scss';
+
+@mixin set-font($name, $link){
+    @font-face{
+        font-family: $name;
+        src: url($link) format("opentype"); 
+    }
+};
+
+@mixin set-f-s-cl($fam, $size, $cl){
+    font-size: $size;
+    color: $cl;
+    font-family: $fam;
+};
+
+@mixin flex($dir){
+    display: flex;
+    flex-direction: $dir;
+    @content
+};
+
+@mixin res($width) {
+    @media screen and(max-width: $width) {
+        @content;
+    }
+}
+
+@mixin res2($max-w, $min-w) {
+    @media only screen and (max-width:$max-w) and (min-width:$min-w){
+        @content;
+    } 
+}
+
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 580px; 
+$tablet-width: 768px; 
+$laptop-width: 1024px; 
+$desktop-width: 1366px;
+$desktop-large-width: 1800px;
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+  @content;   
+ } 
+}
+
+@mixin note { @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {       
+   @content;   
+ } 
+} 
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {       
+   @content;   
+ } 
+}  
+
+@mixin laptop { @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {     
+  @content;  
+ } 
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-large-width - 1px}) {     
+  @content;  
+ } 
+}
+
+
+@mixin desktopLarge { @media (min-width: #{$desktop-large-width - 1px}) {     
+  @content;   
+ } 
+}

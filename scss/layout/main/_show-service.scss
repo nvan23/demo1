@@ -1,0 +1,344 @@
+//show service row
+.show-service:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.show-service {
+    background-color: white;
+    .column-left {
+        float: left;
+        width: 40%;
+        @include mobile {
+            width: 100%;
+        }
+        @include note {
+            width: 60%;
+        }
+        @include tablet {
+            width: 40%;
+        }
+        @include laptop {
+            width: 50%;
+        }
+        @include desktop {
+            width: 50%;
+        }
+        @include desktopLarge {
+            width: 50%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .column-right{
+        float: right;
+        padding-top: 2%;
+        width: 55%;
+        @include mobile {
+            width: 100%;
+        }
+        @include note {
+            position: absolute;
+            float: left;
+            margin-left: 40%;
+            width: 60%;
+        }
+        @include tablet {
+            width: 60%;
+        }
+        @include laptop {
+            position: absolute;
+            float: left;
+            margin-left: 40%;
+            width: 60%;
+        }
+        @include desktop {
+            position: absolute;
+            float: left;
+            margin-left: 40%;
+            width: 60%;
+        }
+        @include desktopLarge {
+            position: absolute;
+            float: left;
+            margin-left: 40%;
+            width: 60%;
+        }
+        .row-top:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .row-top {
+            padding-top: 4%;
+            width: 80%;
+            @include mobile {
+                width: 100%;
+            }
+            @include note {
+                width: 100%;
+                padding-top: 0;
+            }
+            @include tablet {
+                width: 100%;
+                padding-top: 0;
+            }
+            @include laptop {
+                width: 100%;
+                padding-top: 10px;
+            }
+            @include desktop {
+                width: 100%;
+                padding-top: 10px;
+            }
+            @include desktopLarge {
+                width: 100%;
+                padding-top: 10px;
+            }
+            .title {
+                font-size: x-large;
+                @include mobile {
+                    padding-top: 30px;
+                    font-size: 200%;
+                    text-align: center;
+                }
+                @include note {
+                    padding: 0;
+                    font-size: 150%;
+                    text-align: left;
+                    padding-bottom: 2%;
+                }
+                @include tablet {
+                    padding: 0;
+                    font-size: 150%;
+                    text-align: left;
+                    padding-bottom: 2%;
+                }
+                @include laptop {
+                    padding: 0;
+                    font-size: 180%;
+                    text-align: left;
+                }
+                @include desktop {
+                    padding: 0;
+                    font-size: 34px;
+                    text-align: left;
+                }
+                @include desktopLarge {
+                    padding: 0;
+
+                    font-size: 38px;
+                    text-align: left;
+                }
+                p {
+                    color: black;
+                    font-style: italic;
+                    font-family: 'Oleo Script Swash Caps';
+                }
+            }
+            .content {
+                padding-top: 10%;
+                padding-right: 20%;
+                @include mobile {
+                    padding: 5% 10%;
+                }
+                @include note {
+                    padding: 2% 0;
+                    padding-right: 15%;
+                }
+                @include tablet {
+                    padding: 2% 0;
+                    padding-right: 15%;
+                }
+                @include laptop {
+                    padding: 5% 0;
+                    padding-right: 15%;
+                }
+                @include desktop {
+                    padding: 5% 0;
+                    padding-right: 40%;
+                }
+                @include desktopLarge {
+                    padding: 5% 0;
+                    padding-right: 40%;
+                }
+                p {
+                    float: left; 
+                    font-size: small;
+                    @include mobile {
+                        font-size: 100%;
+                        text-align: center;
+                        line-height:20px;
+                    }
+                    @include note {
+                        font-size: 100%;
+                        line-height: 18px;
+                    }
+                    @include tablet {
+                        font-size: 100%;
+                        line-height: 18px;
+                    }
+                    @include laptop {
+                        font-size: 100%;
+                        line-height: 18px;
+                    }
+                    @include desktop {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                    @include desktopLarge {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+        .row-bot:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .row-bot{
+            width: 80%;
+            padding-top: 8%;
+            padding-right: 10%;
+            @include mobile {
+                padding: 10%;
+                width: 100%;
+            }
+            @include note {
+                padding-top: 5%;
+                width: 100%;
+            }
+            @include tablet {
+                padding-top: 5%;
+                width: 100%;
+            }
+            @include laptop {
+                padding-top: 5%;
+                width: 100%;
+            }
+            @include desktop {
+                padding-top: 5%;
+                width: 100%;
+            }
+            @include desktopLarge {
+                padding-top: 5%;
+                width: 100%;
+            }
+            .column {
+                text-align: center;
+                float: left;
+                max-width: 30%;
+                @include mobile {
+                  max-width: 100%;
+                  float: none;
+                  text-align: center;
+                  padding-bottom: 10%;
+                }
+                @include note {
+                  max-width: 30%;
+                  float: left;
+                  text-align: center;
+                  padding-bottom: 5%;
+                }
+                @include tablet {
+                  max-width: 25%;
+                  float: left;
+                  text-align: center;
+                  padding-bottom: 5%;
+                } 
+                @include laptop {
+                  max-width: 30%;
+                  float: left;
+                  text-align: center;
+                  padding-bottom: 5%;
+                }
+                @include desktop {
+                  max-width: 25%;
+                  float: left;                 
+                  text-align: center;
+                  padding-bottom: 10%px;
+                }
+                @include desktopLarge {
+                  max-width: 25%;
+                  float: left;                 
+                  text-align: center;
+                  padding-bottom: 10%px;
+                } 
+            }
+            .icon-item {
+                img {
+                    width: 20%;
+                    @include mobile {
+                        width: 30%;
+                    }
+                    @include note {
+                        width: 30%;
+                    }
+                    @include tablet {
+                        width: 30%;
+                    }
+                }
+            }
+            .numberic-item {
+                padding-top: 5%;
+                font-size: 200%;
+                font-weight: bold;
+                color: #737373;
+                @include mobile {
+                    font-size: 300%;
+                }
+                @include note {
+                    padding: 5px 0;
+                    font-size: 180%;
+                }
+                @include tablet {
+                    font-size: 180%;
+                }
+                @include desktop {
+                    font-size: 40px;
+                }
+                @include desktopLarge {
+                    font-size: 50px;
+                }
+            }
+            .name-item {
+                padding-top: 5%;
+                font-size: x-small;
+                color: #737373;
+                @include mobile {
+                    padding: 0;
+                    font-size: 150%;
+                    text-align: center;
+                }
+                @include note {
+                    padding: 5px 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+                @include tablet {
+                    padding: 0;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                @include laptop {
+                    padding-top: 10px;
+                    font-size: 90%;
+                    text-align: center;
+                }
+                @include desktop {
+                    padding-top: 10px;
+                    font-size: 15px;
+                    text-align: center;
+                }
+                @include desktopLarge {
+                    padding-top: 10px;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }            
+        }
+    }
+}

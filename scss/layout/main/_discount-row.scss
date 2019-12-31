@@ -1,0 +1,38 @@
+//block row
+.discount:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.discount {
+    margin-top: 30px;
+    background-color: #79c9d2;
+    p {
+        color: white;
+        font-family: 'Oleo Script';
+        font-size: x-large;
+        font-style: italic;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include mobile {
+            font-size: 25px;
+            font-style: italic;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        @include desktop {
+            font-size: 30px;
+            font-style: italic;
+            text-align: center;
+            padding: 30px 0;
+        }
+        @include desktopLarge {
+            font-size: 40px;
+            font-style: italic;
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
+}

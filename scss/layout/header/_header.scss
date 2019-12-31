@@ -1,0 +1,110 @@
+@import "../../helper/mixin.scss";
+@import "../../helper/variable.scss";
+@import "../../helper/font.scss";
+
+header {
+    .back-to-top {
+        #back-to-top-Btn {
+            :hover {
+                background-color: gray;
+                border-radius: 50%;
+                padding: 5px;
+            }
+            display: none;
+            background-color: none;
+            color: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        i {
+            font-size: 30px;        
+        }
+    }
+    
+    .topnav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 3%;
+            margin-right: 10%;
+            margin-left: 55%;
+            @include desktop {
+                margin-left: 0;
+                margin-right: 15%;
+            }
+            @include desktopLarge {
+                margin-left: 0;
+                margin-right: 15%;
+            }
+        }
+    
+        .topnav a {
+            color: gray;
+            text-align: center;
+            text-decoration: none;
+            font-size: 80%;
+            @include desktop {
+                font-size: 15px;
+                padding: 10px;
+            }
+            @include desktopLarge {
+                font-size: 15px;
+                padding: 10px;
+            }
+            padding-right: 5px;
+        }
+    
+        .topnav a:hover {
+            cursor: pointer;
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            
+            .topnav a {
+                display: none;
+                padding: 14px 16px;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+                font-size: 30px;
+                padding-right: 20px;
+            }
+            .topnav {
+                margin-top: 0;
+                margin-right: 0;
+                margin: 0;
+            }
+            .topnav.responsive {
+                position: relative;
+            }
+    
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                display: block;
+            }
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+}

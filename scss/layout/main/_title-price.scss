@@ -1,0 +1,123 @@
+//block row white
+.price:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.price {
+    background-color: white;
+    .title {
+        padding-top: 50px;
+        @include mobile {
+            padding-top: 10px;
+        }
+        @include note {
+            padding-top: 30px;
+        }
+        @include tablet {
+            padding-top: 30px;
+        }
+        @include laptop {
+            padding-top: 40px;
+        }
+        @include desktop {
+            padding-top: 60px;
+        }
+        @include desktopLarge {
+            padding-top: 65px;
+        }
+        p {
+            color: #79c9d2;
+            font-family: 'Oleo Script Swash Caps';
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            @include mobile {
+                margin-top: 20px;
+                font-size: 35px;
+            }
+            @include note {
+                font-size: 200%;
+            }
+            @include tablet {
+                font-size: 200%;
+            }
+            @include laptop {
+                font-size: 200%;
+            }
+            @include desktop {
+                font-size: 40px;
+            }
+            @include desktopLarge {
+                font-size: 50px;
+            }
+        }
+    }
+    .content {
+        p {
+            color: #737373;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            text-align: center;
+            padding: 20px 30%;
+            @include mobile {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                line-height: 20px;
+            }
+            @include note {
+                font-size: 100%;
+                padding: 2% 15%;
+                text-align: center;
+                line-height: 20px;
+            }
+            @include tablet {
+                font-size: 16px;
+                padding: 2% 15%;
+                text-align: center;
+                line-height: 20px;
+            }
+            @include laptop {
+                font-size: 90%;
+                padding: 2% 25%;
+                text-align: center;
+                line-height: 20px;
+            }
+            @include desktop {
+                font-size: 18px;
+                padding: 2% 25%;
+                text-align: center;
+                line-height: 25px;
+            }
+            @include desktopLarge {
+                font-size: 20px;
+                padding: 2% 25%;
+                text-align: center;
+                line-height: 28px;
+            }
+        }
+    }
+    .flower-icon {
+        text-align: center;
+        padding-bottom: 10px;
+        @include mobile {
+            padding-bottom: 20px;
+        }
+        img {
+            width: 6%;
+            @include mobile {
+                width: 30%;
+            }
+            @include note {
+                width: 15%;
+            }
+            @include tablet {
+                width: 10%;
+            }
+            @include laptop {
+                width: 10%;
+            }
+        }
+    }
+}

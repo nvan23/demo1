@@ -36,7 +36,8 @@
         float: left;
         width:25%;
         @include mobile {
-            width: 50%;
+            width: 100%;
+            margin-top: 20px;
         }
         @include note {
             width: 50%;
@@ -71,7 +72,7 @@
             p {
                 @include mobile {
                     font-size: 70%;
-                    line-height: 110%;
+                    line-height: 15px;
                 }
                 @include note {
                     font-size: 80%;
@@ -98,7 +99,8 @@
         float: left;
         width:25%;
         @include mobile {
-            width: 50%;
+            width: 100%;
+            margin: 20px 0;
         }
         @include note {
             width: 50%;
@@ -143,7 +145,7 @@
         }
         .contact-content {
             @include mobile {
-                line-height: 80%;
+                line-height: 15px;
             }
             .title {
                 @include mobile {
@@ -188,7 +190,7 @@
         width:50%;
         padding-top: 20px;
         @include mobile {
-            padding-top: 0;
+            padding-top: 100px;
             float: none;
             text-align: center;
             width: 100%;
@@ -209,12 +211,13 @@
             }
             .fa {
                 @include mobile {
-                    padding: 2px 0px;
+                    padding: 4px 4px;
                     padding-top: 6px;
                     font-size: 150%;
                     width: 10%;
                     text-align: center;
                     border-radius: 3px; 
+                    margin-bottom: 5px;
                 }
                 @include desktop {
                     padding: 10px 2px;

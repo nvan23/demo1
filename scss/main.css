@@ -1919,6 +1919,11 @@ header img {
   width: 100%;
   height: auto;
 }
+@media (max-width: 579px) {
+  .slideshow-container .slides .slide-cover img {
+    height: 100px;
+  }
+}
 .slideshow-container .slides .quote-block {
   text-align: left;
   background-color: none;
@@ -2270,12 +2275,20 @@ header img {
   padding-left: 10%;
   width: 50%;
 }
+@media (max-width: 579px) {
+  .reserve-now-form .input-field-form {
+    width: 100%;
+    float: left;
+    padding-left: 10px;
+  }
+}
 .reserve-now-form .input-field-form .title {
   padding-bottom: 30px;
 }
 @media (max-width: 579px) {
   .reserve-now-form .input-field-form .title {
     padding-bottom: 5px;
+    text-align: center;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2380,6 +2393,7 @@ header img {
   }
 }
 .reserve-now-form .input-field-form form .input-name input {
+  margin-top: 5px;
   padding: 7px;
   width: 100%;
   border-style: none;
@@ -2388,7 +2402,7 @@ header img {
 @media (max-width: 579px) {
   .reserve-now-form .input-field-form form .input-name input {
     padding: 5px;
-    width: 100%;
+    width: 94%;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2436,6 +2450,7 @@ header img {
   }
 }
 .reserve-now-form .input-field-form form .input-phone input {
+  margin-top: 5px;
   padding: 7px;
   width: 100%;
   border-style: none;
@@ -2444,7 +2459,7 @@ header img {
 @media (max-width: 579px) {
   .reserve-now-form .input-field-form form .input-phone input {
     padding: 5px;
-    width: 100%;
+    width: 94%;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2491,6 +2506,7 @@ header img {
   }
 }
 .reserve-now-form .input-field-form form .input-email input {
+  margin-top: 5px;
   padding: 7px;
   width: 100%;
   border-style: none;
@@ -2499,7 +2515,7 @@ header img {
 @media (max-width: 579px) {
   .reserve-now-form .input-field-form form .input-email input {
     padding: 5px;
-    width: 195%;
+    width: 94%;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2532,8 +2548,8 @@ header img {
 }
 @media (max-width: 579px) {
   .reserve-now-form .input-field-form form textarea {
-    height: 80px;
-    width: 200%;
+    height: 180px;
+    width: 96.5%;
     padding-bottom: 10px;
   }
 }
@@ -2600,7 +2616,7 @@ header img {
     padding: 2px 5px;
     border-radius: 1px;
     box-shadow: 0px 1px #66abb1;
-    width: 105%;
+    width: 96.5%;
   }
 }
 .reserve-now-form .input-field-form form .button .button:hover {
@@ -2611,9 +2627,22 @@ header img {
   width: 50%;
   float: left;
 }
+@media (max-width: 579px) {
+  .reserve-now-form .image-form {
+    width: 100%;
+  }
+}
 .reserve-now-form .image-form img {
   float: right;
   width: 80%;
+}
+@media (max-width: 579px) {
+  .reserve-now-form .image-form img {
+    width: 100%;
+    margin-top: 10px;
+    float: none;
+    text-align: center;
+  }
 }
 
 /* Mixin */
@@ -2718,7 +2747,8 @@ header img {
 }
 @media (max-width: 579px) {
   .footer .address {
-    width: 50%;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2771,7 +2801,7 @@ header img {
 @media (max-width: 579px) {
   .footer .address .address-content p {
     font-size: 70%;
-    line-height: 110%;
+    line-height: 15px;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2804,7 +2834,8 @@ header img {
 }
 @media (max-width: 579px) {
   .footer .contact {
-    width: 50%;
+    width: 100%;
+    margin: 20px 0;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -2872,7 +2903,7 @@ header img {
 }
 @media (max-width: 579px) {
   .footer .contact .contact-content {
-    line-height: 80%;
+    line-height: 15px;
   }
 }
 .footer .contact .contact-content .title {
@@ -2934,7 +2965,7 @@ header img {
 }
 @media (max-width: 579px) {
   .footer .social-network {
-    padding-top: 0;
+    padding-top: 100px;
     float: none;
     text-align: center;
     width: 100%;
@@ -2970,12 +3001,13 @@ header img {
 }
 @media (max-width: 579px) {
   .footer .social-network .social-icon-row .fa {
-    padding: 2px 0px;
+    padding: 4px 4px;
     padding-top: 6px;
     font-size: 150%;
     width: 10%;
     text-align: center;
     border-radius: 3px;
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 1366px) and (max-width: 1799px) {
